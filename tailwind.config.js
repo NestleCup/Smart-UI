@@ -27,6 +27,10 @@ export default {
           },
         ],
       },
+      backgroundImage: {
+        line: "url('./img/Line_background.png')",
+        rectangle: "url('./img/rectangle.png')",
+      },
     },
   },
   plugins: [],

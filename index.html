@@ -17,19 +17,19 @@
     <!-- Основной контейнер с паддингами по бокам -->
     <div>
       <img
-        src="./img/Ellipse 5.png"
+        src="./img/section_main/ellipse_5.png"
         class="absolute z-[-1] left-0 top-0"
         alt=""
       />
       <img
-        src="./img/Circle 2.png "
+        src="./img/section_main/circle_2.png "
         class="min-h-screen z-[-1] absolute right-0"
         alt=""
       />
     </div>
-    <div class="mx-auto w-full box-border max-w-[calc(100%-400px)]">
+    <div class="box-border w-full mx-auto">
       <!-- Шапка -->
-      <header class="items-center grid_layout h-28 md:flex-row">
+      <header class="items-center wrap grid_layout h-28 md:flex-row">
         <!-- Лого + навигация -->
         <!-- <div class="items-center col-span-5 mb-4 md:mb-0"> -->
         <div class="col-span-2">
@@ -52,8 +52,8 @@
             <button class="px-2 py-1 rounded hover:bg-gray-100">EN</button>
           </div>
           <div class="flex gap-5">
-            <img class="max-w-8" src="./img/telergam.svg" alt="telegram" />
-            <img class="max-w-8" src="./img/whatsapp.svg" alt="whatsapp" />
+            <img class="max-w-8" src="./img/telergam.png" alt="telegram" />
+            <img class="max-w-8" src="./img/whatsapp.png" alt="whatsapp" />
           </div>
         </div>
         <!-- </div> -->
@@ -61,21 +61,21 @@
 
       <!-- Основной контент -->
       <main class="mt-[88px]">
-        <section class="min-h-screen grid_layout lg:flex-row ">
+        <section class="relative h-screen wrap grid_layout lg:flex-row">
           <!-- Текстовый блок -->
+
           <div class="col-span-7">
-            <div class="relative ">
+            <div class="relative">
               <img
-                src="./img/Circle 4.png"
+                src="./img/section_main/circle_4.png"
                 class="absolute z-[-1] top-[-18px]"
                 alt=""
               />
 
               <h1
-                class="mb-[24px] text-h1 after:content-['.']  after:text-green-500 after:ml-[-25px] "
+                class="mb-[24px] text-h1 after:content-['.'] after:text-green-500 after:ml-[-25px]"
               >
                 We are SMART-UI
-            
               </h1>
             </div>
             <p class="text-2xl text-gray mb-[77px]">
@@ -85,42 +85,74 @@
             <div
               class="flex flex-col items-start gap-6 sm:flex-row sm:items-center mb-[100px]"
             >
-              <button class="bg-lime py-[29px] px-[61px] rounded-[10px] hover:bg-yellow transition 
-              duration-500">
+              <button
+                class="bg-lime py-[29px] px-[61px] rounded-[10px] hover:bg-yellow transition duration-500"
+              >
                 Get Started
               </button>
 
               <div class="flex items-center gap-4">
-                <a href="#"><img class="h-8" src="./img/Clutch.svg" alt="Clutch" /></a>
-                <a href="#"><img class="h-8" src="./img/upwork.svg" alt="upwork" /></a>
-              <a href="#">
-                <img class="h-8" src="./img/linkedIn.svg" alt="linkedIn" />
-              </a>  
+                <a href="#"
+                  ><img
+                    class="h-8"
+                    src="./img/section_main/clutch.png"
+                    alt="Clutch"
+                /></a>
+                <a href="#"
+                  ><img
+                    class="h-8"
+                    src="./img/section_main/upwork.png"
+                    alt="upwork"
+                /></a>
+                <a href="#">
+                  <img
+                    class="h-8"
+                    src="./img/section_main/linkedIn.png"
+                    alt="linkedIn"
+                  />
+                </a>
               </div>
             </div>
             <div class="flex gap-[16px] items-center">
-              <img src="./img/scroll-horitontal 1.svg" alt="" />
+              <img src="./img/section_main/scroll-horitontal.png" alt="" />
               <span class="text-[16px] text-gray">Scroll to explore</span>
             </div>
           </div>
 
           <!-- Изображение -->
           <div class="relative w-full col-start-8 col-end-13 lg:w-auto">
-            <img src="./img/Circle 7.png" class="z-[-1] absolute" alt="" />
             <img
-              class="w-full "
-              src="./img/illustration.png"
+              src="./img/section_main/circle_7.png"
+              class="z-[-1] absolute"
+              alt=""
+            />
+            <img
+              class="w-full"
+              src="./img/section_main/illustration.png"
               alt="Smart-UI Illustration"
             />
           </div>
-          <div>
-            <img src="./img/" alt="" />
-          </div>
         </section>
-        <section class="h-[910px] bg-black">
-          <!-- <div class="absolute left-0 right-0 bg-black"> -->
-            <h2>dhhh</h2>
+        <section class="relative min-h-screen">
+          <div
+            class="absolute z-[-2] inset-0 bg-center bg-no-repeat bg-cover bg-gray_blue bg-line"
+          ></div>
+          <div
+            class="absolute inset-0 z-[-1] bg-rectangle bg-cover bg-no-repeat bg-center"
+          ></div>
+          <div class="z-30 wrap">
+            <h2 class="text-white text-8xl">What We Do?</h2>
+            <p>
+              By implementing modern Internet technologies, we help our Clients
+              to achieve their goals and solve problems effectively, striving to
+              do it better than competitors do, and offering optimal effective
+              solutions taking into account the interests of each Client, with
+              sincere care and maximum possible attention.
+            </p>
           </div>
+          <!-- <div class="absolute left-0 right-0 bg-black"> -->
+
+          <!-- </div> -->
         </section>
       </main>
     </div>
