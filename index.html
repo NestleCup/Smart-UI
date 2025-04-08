@@ -13,7 +13,7 @@
     />
     <title>Smart-ui</title>
   </head>
-  <body class="min-h-screen bg-white font-dm_sans">
+  <body class="bg-white font-dm_sans">
     <!-- Основной контейнер с паддингами по бокам -->
     <div>
       <img
@@ -23,13 +23,15 @@
       />
       <img
         src="./img/section_main/circle_2.png "
-        class="min-h-screen z-[-1] absolute right-0"
+        class="z-[-2] absolute h-full right-0 object-cover object-center"
         alt=""
       />
     </div>
     <div class="box-border w-full mx-auto">
       <!-- Шапка -->
-      <header class="items-center wrap grid_layout h-28 md:flex-row">
+      <header
+        class="items-center wrap grid_layout pt-[64px] pb-[54px] md:flex-row"
+      >
         <!-- Лого + навигация -->
         <!-- <div class="items-center col-span-5 mb-4 md:mb-0"> -->
         <div class="col-span-2">
@@ -42,28 +44,27 @@
             <li><a href="#" class="hover:text-gray-600">Portfolio</a></li>
           </ul>
         </nav>
-        <!-- </div> -->
 
-        <!-- Языки + соцсети -->
-        <!-- <div class="flex items-center gap-4 col-star-9 md:gap-6"> -->
         <div class="flex col-span-3 col-start-9">
-          <div class="flex mr-10">
-            <button class="px-2 py-1 rounded hover:bg-gray-100">UA</button>
-            <button class="px-2 py-1 rounded hover:bg-gray-100">EN</button>
+          <div class="flex mr-10 gap-[30px]">
+            <span> UA </span>
+            <span> EN </span>
           </div>
           <div class="flex gap-5">
-            <img class="max-w-8" src="./img/telergam.png" alt="telegram" />
-            <img class="max-w-8" src="./img/whatsapp.png" alt="whatsapp" />
+            <a href="#">
+              <img class="max-w-8" src="./img/telergam.png" alt="telegram" />
+            </a>
+            <a href="#">
+              <img class="max-w-8" src="./img/whatsapp.png" alt="whatsapp" />
+            </a>
           </div>
         </div>
-        <!-- </div> -->
       </header>
 
-      <!-- Основной контент -->
       <main class="mt-[88px]">
-        <section class="relative h-screen wrap grid_layout lg:flex-row">
-          <!-- Текстовый блок -->
-
+        <section
+          class="relative flex-grow wrap grid_layout pb-[55px] min-h-minHeight w-full overflow-hidden"
+        >
           <div class="col-span-7">
             <div class="relative">
               <img
@@ -85,9 +86,7 @@
             <div
               class="flex flex-col items-start gap-6 sm:flex-row sm:items-center mb-[100px]"
             >
-              <button
-                class="bg-lime py-[29px] px-[61px] rounded-[10px] hover:bg-yellow transition duration-500"
-              >
+              <button class="py-[29px] px-[61px] button_action">
                 Get Started
               </button>
 
@@ -133,22 +132,43 @@
             />
           </div>
         </section>
-        <section class="relative min-h-screen">
+        <section class="relative min-h-[910px] w-full">
           <div
             class="absolute z-[-2] inset-0 bg-center bg-no-repeat bg-cover bg-gray_blue bg-line"
           ></div>
           <div
             class="absolute inset-0 z-[-1] bg-rectangle bg-cover bg-no-repeat bg-center"
           ></div>
-          <div class="z-30 wrap">
-            <h2 class="text-white text-8xl">What We Do?</h2>
-            <p>
-              By implementing modern Internet technologies, we help our Clients
-              to achieve their goals and solve problems effectively, striving to
-              do it better than competitors do, and offering optimal effective
-              solutions taking into account the interests of each Client, with
-              sincere care and maximum possible attention.
-            </p>
+          <div class="z-30 grid-rows-2 wrap grid_layout">
+            <div class="col-span-6 mt-[87px]">
+              <h2 class="text-white text-8xl">What We Do?</h2>
+              <p class="text-[24px] text-gray mt-5">
+                By implementing modern Internet technologies, we help our
+                Clients to achieve their goals and solve problems effectively,
+                striving to do it better than competitors do, and offering
+                optimal effective solutions taking into account the interests of
+                each Client, with sincere care and maximum possible attention.
+              </p>
+              <button class="button_action px-[46px] py-[29px] mt-[55px]">
+                Ask a question
+              </button>
+            </div>
+            <div
+              class="col-start-7 col-end-13 row-start-2 border-t-4 border-medium_sea_green pt-[58px]"
+            >
+              <p class="text-white text-[24px]">
+                We have already strong skills and we are not stopping on
+                achieved in following:
+              </p>
+              <p class="text-[21px] text-gray mt-5">
+                - Programming Languages: HTML5, CSS3, PHP, JavaScript
+                (AngularJS, ReactJS NodeJS, jQuery) - Content Management Systems
+                (CMS): Wordpress, Opencart, Drupal - Version Control System
+                (VCS): SVN GIT GitLab GitHub Bitbucket - Software as a Service
+                (SAAS): Amazon Web Services, Rackspace Cloud - Integration of
+                different Application Programming Interface (API)
+              </p>
+            </div>
           </div>
           <!-- <div class="absolute left-0 right-0 bg-black"> -->
 

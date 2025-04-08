@@ -7,7 +7,18 @@
   grid-template-columns: repeat(12, 1fr);
   column-gap: 40px;
 }
+/* * {
+  font-size: 21px;
+} */
 .wrap {
   margin: auto;
   max-width: calc(100% - 400px);
+}
+.button_action {
+  background: #13cc00;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.button_action:hover {
+  background-color: #ffd247;
 }

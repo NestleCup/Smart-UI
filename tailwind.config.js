@@ -31,6 +31,11 @@ export default {
         line: "url('./img/Line_background.png')",
         rectangle: "url('./img/rectangle.png')",
       },
+      height: {
+        minHeight: {
+          'screen-minus-header': 'calc(100vh - 80px)',
+        },
+      },
     },
   },
   plugins: [],
