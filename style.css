@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .grid_layout {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

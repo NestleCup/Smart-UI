@@ -28,8 +28,8 @@ export default {
         ],
       },
       backgroundImage: {
-        line: "url('./img/Line_background.png')",
-        rectangle: "url('./img/rectangle.png')",
+        line: "url('./assets/img/Line_background.png')",
+        rectangle: "url('./assets/img/rectangle.png')",
       },
       height: {
         minHeight: {

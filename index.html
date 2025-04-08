@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,170 +11,296 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./src/style/index.scss" />
     <title>Smart-ui</title>
   </head>
   <body class="bg-white font-dm_sans">
     <!-- Основной контейнер с паддингами по бокам -->
     <div>
       <img
-        src="./img/section_main/ellipse_5.png"
+        src="./assets/img/section_main/ellipse_5.png"
         class="absolute z-[-1] left-0 top-0"
         alt=""
       />
       <img
-        src="./img/section_main/circle_2.png "
+        src="./assets/img/section_main/circle_2.png "
         class="z-[-2] absolute h-full right-0 object-cover object-center"
         alt=""
       />
     </div>
-    <div class="box-border w-full mx-auto">
-      <!-- Шапка -->
-      <header
-        class="items-center wrap grid_layout pt-[64px] pb-[54px] md:flex-row"
-      >
-        <!-- Лого + навигация -->
-        <!-- <div class="items-center col-span-5 mb-4 md:mb-0"> -->
-        <div class="col-span-2">
-          <img class="w-40 md:w-48" src="./img/logo.png" alt="logo" />
+    <!-- Шапка -->
+    <header
+      class="items-center wrap grid_layout pt-[64px] pb-[54px] md:flex-row"
+    >
+      <!-- Лого + навигация -->
+      <!-- <div class="items-center col-span-5 mb-4 md:mb-0"> -->
+      <div class="col-span-2">
+        <img class="w-40 md:w-48" src="./assets/img/logo.png" alt="logo" />
+      </div>
+      <nav class="col-span-3 ml-6 md:ml-12">
+        <ul class="flex items-center gap-4 text-lg md:gap-8">
+          <li><a href="#" class="hover:text-gray-600">Home</a></li>
+          <li><a href="#" class="hover:text-gray-600">Our team</a></li>
+          <li><a href="#" class="hover:text-gray-600">Portfolio</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex col-span-3 col-start-9">
+        <div class="flex mr-10 gap-[30px]">
+          <span> UA </span>
+          <span> EN </span>
         </div>
-        <nav class="col-span-3 ml-6 md:ml-12">
-          <ul class="flex items-center gap-4 text-lg md:gap-8">
-            <li><a href="#" class="hover:text-gray-600">Home</a></li>
-            <li><a href="#" class="hover:text-gray-600">Our team</a></li>
-            <li><a href="#" class="hover:text-gray-600">Portfolio</a></li>
-          </ul>
-        </nav>
-
-        <div class="flex col-span-3 col-start-9">
-          <div class="flex mr-10 gap-[30px]">
-            <span> UA </span>
-            <span> EN </span>
-          </div>
-          <div class="flex gap-5">
-            <a href="#">
-              <img class="max-w-8" src="./img/telergam.png" alt="telegram" />
-            </a>
-            <a href="#">
-              <img class="max-w-8" src="./img/whatsapp.png" alt="whatsapp" />
-            </a>
-          </div>
-        </div>
-      </header>
-
-      <main class="mt-[88px]">
-        <section
-          class="relative flex-grow wrap grid_layout pb-[55px] min-h-minHeight w-full overflow-hidden"
-        >
-          <div class="col-span-7">
-            <div class="relative">
-              <img
-                src="./img/section_main/circle_4.png"
-                class="absolute z-[-1] top-[-18px]"
-                alt=""
-              />
-
-              <h1
-                class="mb-[24px] text-h1 after:content-['.'] after:text-green-500 after:ml-[-25px]"
-              >
-                We are SMART-UI
-              </h1>
-            </div>
-            <p class="text-2xl text-gray mb-[77px]">
-              You deserve easy IT, to make it easy make it SMART 👋
-            </p>
-
-            <div
-              class="flex flex-col items-start gap-6 sm:flex-row sm:items-center mb-[100px]"
-            >
-              <button class="py-[29px] px-[61px] button_action">
-                Get Started
-              </button>
-
-              <div class="flex items-center gap-4">
-                <a href="#"
-                  ><img
-                    class="h-8"
-                    src="./img/section_main/clutch.png"
-                    alt="Clutch"
-                /></a>
-                <a href="#"
-                  ><img
-                    class="h-8"
-                    src="./img/section_main/upwork.png"
-                    alt="upwork"
-                /></a>
-                <a href="#">
-                  <img
-                    class="h-8"
-                    src="./img/section_main/linkedIn.png"
-                    alt="linkedIn"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="flex gap-[16px] items-center">
-              <img src="./img/section_main/scroll-horitontal.png" alt="" />
-              <span class="text-[16px] text-gray">Scroll to explore</span>
-            </div>
-          </div>
-
-          <!-- Изображение -->
-          <div class="relative w-full col-start-8 col-end-13 lg:w-auto">
+        <div class="flex gap-5">
+          <a href="#">
             <img
-              src="./img/section_main/circle_7.png"
-              class="z-[-1] absolute"
+              class="max-w-8"
+              src="./assets/img/telergam.png"
+              alt="telegram"
+            />
+          </a>
+          <a href="#">
+            <img
+              class="max-w-8"
+              src="./assets/img/whatsapp.png"
+              alt="whatsapp"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-[88px]">
+      <section
+        class="relative flex-grow wrap grid_layout pb-[55px] min-h-[calc(100vh-151px)] w-full"
+      >
+        <div class="col-span-7">
+          <div class="relative">
+            <img
+              src="./assets/img/section_main/circle_4.png"
+              class="absolute z-[-1] top-[-18px]"
               alt=""
             />
-            <img
-              class="w-full"
-              src="./img/section_main/illustration.png"
-              alt="Smart-UI Illustration"
-            />
-          </div>
-        </section>
-        <section class="relative min-h-[910px] w-full">
-          <div
-            class="absolute z-[-2] inset-0 bg-center bg-no-repeat bg-cover bg-gray_blue bg-line"
-          ></div>
-          <div
-            class="absolute inset-0 z-[-1] bg-rectangle bg-cover bg-no-repeat bg-center"
-          ></div>
-          <div class="z-30 grid-rows-2 wrap grid_layout">
-            <div class="col-span-6 mt-[87px]">
-              <h2 class="text-white text-8xl">What We Do?</h2>
-              <p class="text-[24px] text-gray mt-5">
-                By implementing modern Internet technologies, we help our
-                Clients to achieve their goals and solve problems effectively,
-                striving to do it better than competitors do, and offering
-                optimal effective solutions taking into account the interests of
-                each Client, with sincere care and maximum possible attention.
-              </p>
-              <button class="button_action px-[46px] py-[29px] mt-[55px]">
-                Ask a question
-              </button>
-            </div>
-            <div
-              class="col-start-7 col-end-13 row-start-2 border-t-4 border-medium_sea_green pt-[58px]"
-            >
-              <p class="text-white text-[24px]">
-                We have already strong skills and we are not stopping on
-                achieved in following:
-              </p>
-              <p class="text-[21px] text-gray mt-5">
-                - Programming Languages: HTML5, CSS3, PHP, JavaScript
-                (AngularJS, ReactJS NodeJS, jQuery) - Content Management Systems
-                (CMS): Wordpress, Opencart, Drupal - Version Control System
-                (VCS): SVN GIT GitLab GitHub Bitbucket - Software as a Service
-                (SAAS): Amazon Web Services, Rackspace Cloud - Integration of
-                different Application Programming Interface (API)
-              </p>
-            </div>
-          </div>
-          <!-- <div class="absolute left-0 right-0 bg-black"> -->
 
-          <!-- </div> -->
-        </section>
-      </main>
-    </div>
+            <h1
+              class="mb-[24px] text-h1 text-gray_blue after:content-['.'] after:text-green-500 after:ml-[-25px]"
+            >
+              We are SMART-UI
+            </h1>
+          </div>
+          <p class="text-2xl text-gray mb-[77px]">
+            You deserve easy IT, to make it easy make it SMART 👋
+          </p>
+
+          <div
+            class="flex flex-col items-start gap-6 sm:flex-row sm:items-center mb-[100px]"
+          >
+            <button class="py-[29px] px-[61px] button_action">
+              Get Started
+            </button>
+
+            <div class="flex items-center gap-4">
+              <a href="#"
+                ><img
+                  class="h-8"
+                  src="./assets/img/section_main/clutch.png"
+                  alt="Clutch"
+              /></a>
+              <a href="#"
+                ><img
+                  class="h-8"
+                  src="./assets/img/section_main/upwork.png"
+                  alt="upwork"
+              /></a>
+              <a href="#">
+                <img
+                  class="h-8"
+                  src="./assets/img/section_main/linkedIn.png"
+                  alt="linkedIn"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="flex gap-[16px] items-center">
+            <img src="./assets/img/section_main/scroll-horitontal.png" alt="" />
+            <span class="text-[16px] text-gray">Scroll to explore</span>
+          </div>
+        </div>
+
+        <!-- Изображение -->
+        <div class="relative w-full col-start-8 col-end-13 lg:w-auto">
+          <img
+            src="./assets/img/section_main/circle_7.png"
+            class="z-[-1] absolute"
+            alt=""
+          />
+          <img
+            class="w-full"
+            src="./assets/img/section_main/illustration.png"
+            alt="Smart-UI Illustration"
+          />
+        </div>
+      </section>
+      <section class="relative w-full min-h-screen">
+        <div
+          class="absolute z-[-2] inset-0 bg-center bg-no-repeat bg-cover bg-gray_blue bg-line"
+        ></div>
+        <div
+          class="absolute inset-0 z-[-1] bg-rectangle bg-cover bg-no-repeat bg-center"
+        ></div>
+        <div class="z-30 grid-rows-2 wrap grid_layout">
+          <div class="col-span-6 mt-[87px]">
+            <h2 class="text-white text-8xl">What We Do?</h2>
+            <p class="text-[24px] text-gray mt-5">
+              By implementing modern Internet technologies, we help our Clients
+              to achieve their goals and solve problems effectively, striving to
+              do it better than competitors do, and offering optimal effective
+              solutions taking into account the interests of each Client, with
+              sincere care and maximum possible attention.
+            </p>
+            <button class="button_action px-[46px] py-[29px] mt-[55px]">
+              Ask a question
+            </button>
+          </div>
+          <div
+            class="col-start-7 col-end-13 row-start-2 border-t-4 border-medium_sea_green pt-[58px]"
+          >
+            <p class="text-white text-[24px]">
+              We have already strong skills and we are not stopping on achieved
+              in following:
+            </p>
+            <ul class="text-[21px] text-gray mt-5">
+              <li>
+                - Programming Languages: HTML5, CSS3, PHP, JavaScript
+                (AngularJS, ReactJS NodeJS, jQuery)
+              </li>
+              <li>
+                - Content Management Systems (CMS): Wordpress, Opencart, Drupal
+              </li>
+              <li>
+                - Version Control System (VCS): SVN GIT GitLab GitHub Bitbucket
+              </li>
+              <li>
+                - Software as a Service (SAAS): Amazon Web Services, Rackspace
+                Cloud
+              </li>
+              <li>
+                - Integration of different Application Programming Interface
+                (API)
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div class="absolute left-0 right-0 bg-black"> -->
+
+        <!-- </div> -->
+      </section>
+      <section class="relative w-full min-h-screen wrap grid_layout pt-[90px]">
+        <div class="col-span-3">
+          <h2>Technology</h2>
+          <p
+            class="mb-[24px] text-h1 text-gray_blue after:content-['.'] after:text-green-500 after:ml-[-25px]"
+          >
+            Tools We Use
+          </p>
+
+          <p class="text-2xl text-gray mb-[77px]">
+            Contact that lead developer and discuss technical points in detail
+          </p>
+
+          <button class="py-[29px] px-[61px] button_action">
+            Contact the lead developer
+          </button>
+
+          <div class="flex gap-[16px] items-center">
+            <img src="./assets/img/section_main/scroll-horitontal.png" alt="" />
+            <span class="text-[16px] text-gray">Scroll to explore</span>
+          </div>
+        </div>
+        <div class="">
+          <div class="bg-light_periwinkle">
+            <img src="./assets/img/css.png" alt="" />
+            <div class="m-[9px] bg-white p-[30px]">
+              <p class="mb-[35px]">Markup</p>
+              <span> HTML, CSS, SASS, Semantic, W3C Valid.</span>
+            </div>
+          </div>
+          <div class=""></div>
+        </div>
+      </section>
+      <section class="relative w-full min-h-screen pt-[60px]">
+        <div
+          class="absolute z-[-2] inset-0 bg-center bg-no-repeat bg-cover bg-gray_blue bg-line"
+        ></div>
+        <div
+          class="absolute inset-0 z-[-1] bg-rectangle bg-cover bg-no-repeat bg-center"
+        ></div>
+        <div class="wrap grid_layout">
+          <h2 class="col-span-3 text-white text-8xl">Strategy</h2>
+
+          <h3
+            class="pt-[54px] col-start-1 col-span-2 before:content-['01'] before:text-green-500 text-[32px] text-white"
+          >
+            Strategy
+          </h3>
+          <p class="pt-[54px] text-[21px] text-gray col-span-5">
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old.
+          </p>
+
+          <h3
+            class="pt-[27px] col-start-6 col-span-2 before:content-['02'] before:text-green-500 text-[32px] text-white"
+          >
+            Design
+          </h3>
+          <p class="text-[21px] pt-[27px] text-gray col-span-5">
+            Not just a picture, but a convenient and intuitive interface with
+            unique and original UI.
+          </p>
+          <h3
+            class="pt-[85px] col-start-1 col-span-2 before:content-['03'] before:text-green-500 text-[32px] text-white"
+          >
+            Developer
+          </h3>
+          <p class="pt-[85px] text-[21px] text-gray col-span-5">
+            HTML, CSS, LESS/SASS, Bootstrap. This is the frame of your site that
+            we will do at the highest level. Vanilla JavaScript, Jquery,
+            WordPress, Angular, React.js. We will make your web app interactive.
+          </p>
+          <h3
+            class="pt-[27px] col-start-6 col-span-2 before:content-['04'] before:text-green-500 text-[32px] text-white"
+          >
+            Support
+          </h3>
+          <p class="pt-[27px] text-[21px] text-gray col-span-5">
+            When the website is done and live. We will support and improve new
+            features on the website.
+          </p>
+          <h3
+            class="pt-[85px] col-start-1 col-span-2 before:content-['05'] before:text-green-500 text-[32px] text-white"
+          >
+            QA
+          </h3>
+          <p class="pt-[85px] text-[21px] text-gray col-span-5">
+            During the QA phase, which is the process of custom software
+            development, we handpick and combine industry best practices and
+            methodologies to detect bugs in the context of the environment; no
+            line of code leaves us untested.
+          </p>
+          <h3
+            class="pt-[27px] col-start-6 col-span-2 before:content-['06'] before:text-green-500 text-[32px] text-white"
+          >
+            Launching
+          </h3>
+          <p class="pt-[27px] text-[21px] text-gray col-span-5">
+            The stage of detecting and correcting a bug in QA as well uploading
+            to the server and domain connection.
+          </p>
+        </div>
+        <!-- <div class="absolute left-0 right-0 bg-black"> -->
+
+        <!-- </div> -->
+      </section>
+    </main>
   </body>
 </html>
